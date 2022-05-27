@@ -1,0 +1,181 @@
+[
+    {
+        "question": "India has largest deposits of ____ in the world",
+        "options": ["gold", "copper", "mica", "None of the above"],
+        "correctanswer": "mica",
+        "id": "1"
+    },
+    {
+        "question": "India's first satellite is named after",
+        "options": ["Aryabhatta", "Bhaskara II", "Bhaskara I", "Albert Einstein"],
+        "correctanswer": "Aryabhatta",
+        "id": "2"
+    },
+    {
+        "question": "India's first ocean wave's energy project was launched in",
+        "options": [1981, 1991, 1995, 2000],
+        "correctanswer": 1991,
+        "id": "3"
+    },
+    {
+        "question": "Indo-Aryan languages are based on an ancient language called",
+        "options": ["Hindi", "Sanskrit", "Kannada", "Tamil"],
+        "correctanswer": "Sanskrit",
+        "id": "4"
+    },
+    {
+        "question": "Malfunctioning of which of the following organs causes jaundice?",
+        "options": ["Stomach", "Pancreas", "Liver", "Kidney"],
+        "correctanswer": "Liver",
+        "id": "5"
+    },
+    {
+        "question": "Indira Gandhi was assassinated in",
+        "options": ["1974", "1984", "1994", "2004"],
+        "correctanswer": 1984,
+        "id": "6"
+    },
+    {
+        "question": "Kathakali, Mohiniatam and Ottamthullal are the famous dances of",
+        "options": ["Kerala", "Karnataka", "Orissa", "Tamil Nadu"],
+        "correctanswer": "Kerala",
+        "id": "7"
+    },
+    {
+        "question": "Indian Institute of Petroleum is located at",
+        "options": ["Dehradun", "Kolkata", "Dhanbad", "New Delhi"],
+        "correctanswer": "Dehradun",
+        "id": "8"
+    },
+    {
+        "question": "Of the following foods, which one is the best source of protein?",
+        "options": ["Butter", "Fish", "Lettuce", "Milk"],
+        "correctanswer": "Fish",
+        "id": "9"
+    },
+    {
+        "question": "Name the instrument used to measure relative humidity",
+        "options": ["Hydrometer", "Hygrometer", "Barometer", "Mercury Thermometer"],
+        "correctanswer": "Hygrometer",
+        "id": "10"
+    },
+    {
+        "question": "Number of commands of Air Force are",
+        "options": ["five", "six", "seven", "eight"],
+        "correctanswer": "seven",
+        "id": "11"
+    },
+    {
+        "question": "National Remote Sensing Agency (NRSA) was setup in",
+        "options": ["1980", "1985", "1990", "1995"],
+        "correctanswer": "1980",
+        "id": "12"
+    },
+    {
+        "question": "Mother Teresa won the Nobel Prize for Peace in",
+        "options": ["1992", "1979", "1988", "1954"],
+        "correctanswer": "1979",
+        "id": "13"
+    },
+    {
+        "question": "Most commonly used bleaching agent is",
+        "options": ["alcohol", "carbon dioxide", "chlorine", "sodium chloride"],
+        "correctanswer": "chlorine",
+        "id": "14"
+    }, {
+        "question": "Jharkhand has ____ state on its eastern end",
+        "options": ["Bihar", "West Bengal", "Orissa", "Chhattisgarh"],
+        "correctanswer": "West Bengal",
+        "id": "15"
+    }, {
+        "question": "Mishra Dhatu Nigam Limited (MIDHANI) was established in",
+        "options": ["1958", "1964", "1973", "1988"],
+        "correctanswer": "1973",
+        "id": "16"
+    }, {
+        "question": "Light Year is related to",
+        "options": ["energy", "speed", "distance", "intensity"],
+        "correctanswer": "distance",
+        "id": "17"
+    }, {
+        "question": "In 2003, the total strength of India's armed forces approximate to",
+        "options": ["13,92,000", "10,92,000", "71,500", "1,32,000"],
+        "correctanswer": "13,92,000",
+        "id": "18"
+    },
+    {
+        "question": "The 2006 World Cup Football Tournament held in",
+        "options": ["France", "China", "Germany", "Brazil"],
+        "correctanswer": "Germany",
+        "id": "19"
+    }
+    ,
+    {
+        "question": "Satellite launching station is located at",
+        "options": ["Sriharikotta", "Solapur ", "Salem", "Warangal "],
+        "correctanswer": "Sriharikotta",
+        "id": "20"
+    },
+    {
+        "question": "Oscar Awards were instituted in",
+        "options": ["1968", "1929", "1901", "1965"],
+        "correctanswer": "1929 ",
+        "id": "21"
+    },
+    {
+        "question": "Sheikh Mujibur Rahman is a well known freedom fighter of",
+        "options": ["Bangladesh", "Myanmar", "Pakistan", "Afghanistan"],
+        "correctanswer": "Bangladesh",
+        "id": "22"
+    },
+    {
+        "question": "Oxford university was founded in",
+        "options": ["1139 AD", "1163 AD ", "215 BC", "55 BC"],
+        "correctanswer": "1163 AD",
+        "id": "23"
+    },
+    {
+        "question": "The 2002 Commonwealth Games were held in",
+        "options": ["Canada", "UK", "Australia", "Malaysia"],
+        "correctanswer": "UK",
+        "id": "24"
+    },
+    {
+        "question": "Rajiv Gandhi, Prime Minister of India, was assassinated in",
+        "options": ["1961", "1971", "1981", "1991"],
+        "correctanswer": "1991",
+        "id": "25"
+    },
+    {
+        "question": "Rabindranath Tagore receive Nobel Prize in 1913 in the field of",
+        "options": ["physics", "peace", "literature", "economy"],
+        "correctanswer": "literature",
+        "id": "26"
+    },
+    {
+        "question": "Oxygen was independently discovered by",
+        "options": ["Rutherford", "William Ramsay", "Joseph Priestley", "Neils Bohr"],
+        "correctanswer": "Joseph Priestley",
+        "id": "27"
+    },
+    {
+        "question": "Raj Kapoor received Dada Saheb Phalke Award in",
+        "options": ["1986", "1987", "1988", "1989"],
+        "correctanswer": "1987",
+        "id": "28"
+    },
+    {
+        "question": "Rangaswamy Cup is associated with",
+        "options": ["archery", "cricket", "football", "hockey"],
+        "correctanswer": "hockey",
+        "id": "29"
+    },
+    {
+        "question": "The first meeting of the UN General Assembly was held in which city?",
+        "options": ["London", "New York", "San Francisco", "Teheran"],
+        "correctanswer": "London",
+        "id": "30"
+    }
+]
+
+
