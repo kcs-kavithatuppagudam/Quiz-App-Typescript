@@ -3,7 +3,7 @@ import React from 'react'
 const QuizEnd = () => {
     return (
         <div>
-            QuizEnd 
+            Quiz Ends here
         </div>
     )
 }
