@@ -4,80 +4,98 @@ import { Container, Row, Col, Card } from 'react-bootstrap'
 import QuizStart from './components/QuizStart';
 import QuizQuestion from './components/QuizQuestion';
 import QuizEnd from './components/QuizEnd'
+import {useAppDispatch} from './redux/hooks'
+import {setScore} from './redux/quizSlice'
+
 import axios from 'axios';
 
 function App() {
-
-
-
-  const [startQuiz, setStartQuiz] = useState<boolean>(false)
-  const [questions, setQuestions] = useState<[{}]>([{}])
-  const [counter,setCounter]=useState<number>(20)
-
+  interface ques {
+    "question": String
+    "options": [] | any
+    "correctanswer": Number
+    "id": String
+  }
+  const [startQuiz, setStartQuiz] = useState<number>(0) //not started 0, started 1 end 2
+  const [questions, setQuestions] = useState<[ques]>([{
+    "question": "",
+    "options": [],
+    "correctanswer": 0,
+    "id": ""
+  }])
+  const [counter, setCounter] = useState<number>(20)
+const dispatch=useAppDispatch()
   const [currentIndex, setCurrentIndex] = useState<number>(0)
-  const [score, setScore] = useState<number>(0)
-
+  // const [score1, setScore1] = useState<number>(0)
+  
 
   useEffect(() => {
-    getQuestions()  
-  },[])
+    getQuestions()
+  }, [])
 
   const getQuestions = async () => {
     const { data } = await axios.get("./questions.json")
     let qBank = data.sort(() => 0.5 - Math.random()).slice(0, 20)
     setQuestions(qBank)
     // console.log(qBank)
-    // console.log(data)
+    //  // console.log(data)
     // console.log(questions)
 
   }
 
   const startBtnHandler = () => {
-    setStartQuiz(true)
+    setStartQuiz(1)
   }
 
 
   const checkAnswer = (userAnswer: any): void => {
-    setCurrentIndex(currentIndex + 1)
+  
+    setCurrentIndex((currentIndex) => currentIndex + 1)
     setCounter(20)
+    
+  if (currentIndex === 20) {
+    setStartQuiz(2)
+  }
     if (userAnswer == questions[currentIndex].correctanswer) {
-      setScore(score + 1)
+      dispatch(setScore())
+      // setScore1(score1 + 1)
     }
-
   }
 
-
-
+  // console.log("currentIndex", currentIndex)
   return (
+
     <div className="App">
-      <Container style={{ height: "300px", width: "600px", margin: "200px", border: "2px solid", marginLeft: "400px", textAlign: "center", alignItems: "center", backgroundColor: "l" }}>
+      <Container style={{ height: "400px", width: "600px", margin: "200px", border: "2px solid", marginLeft: "400px", textAlign: "center", alignItems: "center", backgroundColor: "l" }}>
         <Row>
           <Col>
             <Card>
               <Card.Body>
-                <Card.Title>Quiz App</Card.Title>
-             
-    
-       
-                
+                <Card.Title style={{margin:"30px"}}>Quiz App</Card.Title>
+
                 {
-                  startQuiz ? null : <QuizStart startBtnHandler={startBtnHandler} />
+                  startQuiz == 0 ? <QuizStart startBtnHandler={startBtnHandler} /> : ''
                 }
                 {
-                  startQuiz && currentIndex!==20 ?(
-                  <QuizQuestion questions={questions} currentIndex={currentIndex} checkAnswer={checkAnswer} />):null
+                  startQuiz == 1 && currentIndex !=20 ? (
+                    <QuizQuestion questions={questions} currentIndex={currentIndex} checkAnswer={checkAnswer} counter={counter} setCounter={setCounter} />) : ''
                 }
                 {
-                   currentIndex==20?<QuizEnd/>:null
+                    currentIndex === 20?<QuizEnd/> : ''
                 }
-                
-                <div>{questions[currentIndex].correctanswer}</div>
-                <div>{score}</div>
+                {/* {
+                  startQuiz == 2?<QuizEnd />:''
+                } */}
+                {/* <div>{questions[currentIndex].correctanswer}</div>
+                <div>{score}</div> */}
+                {/* <div>{startQuiz}</div>
+                <div>{currentIndex}</div> */}
               </Card.Body>
             </Card>
           </Col>
         </Row>
       </Container>
+
     </div>
   );
 }
